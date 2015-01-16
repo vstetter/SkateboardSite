@@ -1,0 +1,144 @@
+@import 'modules';
+
+
+body {
+  margin: 0;
+  padding: 0;
+  @include linGradbackground (url("../images/bg.jpg"));
+  font-family: 'Hind', sans-serif;
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+h3 {
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.Subline {
+  display: block;
+  text-align: left;
+  font-size: 0.313em;
+  margin: 0 auto;
+  padding: 0 auto;
+  color: $SecondaryAccentColor;
+}
+
+p {
+  font-size: 0.375em;
+  line-height: 1.4em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 1em 0 0 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 0.5em;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.Buttons {
+  float: right;
+  color: white;
+}
+
+.SiteNav {
+  clear: right;
+  display: inline-block;
+  width: 100%;
+  font-size: 0.5em;
+  ul li a {
+    color: white;
+    background-color: $MainAccentColor;
+  }
+}
+
+.slider {
+  width: 100%;
+  background: white;
+  min-height: 5em;
+}
+
+.Content_Posts {
+  display: inline-block;
+}
+
+.Post {
+  width: 32%;
+  float: left;
+  text-align: left;
+  background-color: white;
+  .Subline {
+    color: $SecondaryAccentColor;
+  }
+}
+
+
+.Content_Profiles {
+  clear: both;
+  display: block;
+}
+
+.ProfilePic {
+    border: 0.2em solid white;
+  a  {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+  }
+  #Mountain {
+    @include linGradbackground (url("../images/sk8er-4.png"));
+    width: 32%;
+    float: left;
+  }
+  #Mullen {
+    @include linGradbackground (url("../images/sk8er-3.png"));
+    width: 32%;
+    float: left;
+
+  }
+  #Caballero {
+    @include linGradbackground (url("../images/sk8er-1.png"));
+    width: 64%;
+    float: left;
+  }
+  #Guerrero {
+    @include linGradbackground (url("../images/sk8er-2.png"));
+    width: 32%;
+    float: right;
+    clear: left;
+  }
+
+
+}
+.Boards {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+}
+
+.Contact-Form {
+  display: inline-block;
+  background-color: white;
+}

@@ -1,0 +1,18 @@
+$MainAccentColor: #9a2d31;
+$SecondaryAccentColor: #AAAAAA;
+$GrayOverlay:#5B5B59;
+$TwitterColor: #758cc4;
+$RSSColor: #bc8f3c;
+$FacebookColor: #4c5894;
+
+
+
+
+@mixin linGradbackground ($imagePath: url("../images/sk8er-1.png")) {
+  background: linear-gradient(rgba(91, 91, 89,0.7),
+  rgba(91, 91, 89,0.7)), $imagePath;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  text-align: center;
+}

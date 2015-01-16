@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Hind', sans-serif; }
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto; }
+
+h3 {
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1em; }
+
+.Subline {
+  display: block;
+  text-align: left;
+  font-size: 0.313em;
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #AAAAAA; }
+
+p {
+  font-size: 0.375em;
+  line-height: 1.4em; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 1em 0 0 0;
+  list-style-type: none; }
+  ul li {
+    display: inline-block; }
+  ul a {
+    display: block;
+    padding: 0.5em; }
+
+img {
+  max-width: 100%; }
+
+.Buttons {
+  float: right;
+  color: white; }
+
+.SiteNav {
+  clear: right;
+  display: inline-block;
+  width: 100%;
+  font-size: 0.5em; }
+  .SiteNav ul li a {
+    color: white;
+    background-color: #9a2d31; }
+
+.slider {
+  width: 100%;
+  background: white;
+  min-height: 5em; }
+
+.Content_Posts {
+  display: inline-block; }
+
+.Post {
+  width: 32%;
+  float: left;
+  text-align: left;
+  background-color: white; }
+  .Post .Subline {
+    color: #AAAAAA; }
+
+.Content_Profiles {
+  clear: both;
+  display: block; }
+
+.ProfilePic {
+  border: 0.2em solid white; }
+  .ProfilePic a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: white; }
+  .ProfilePic #Mountain {
+    background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-4.png");
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    text-align: center;
+    width: 32%;
+    float: left; }
+  .ProfilePic #Mullen {
+    background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-3.png");
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    text-align: center;
+    width: 32%;
+    float: left; }
+  .ProfilePic #Caballero {
+    background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-1.png");
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    text-align: center;
+    width: 64%;
+    float: left; }
+  .ProfilePic #Guerrero {
+    background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-2.png");
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    text-align: center;
+    width: 32%;
+    float: right;
+    clear: left; }
+
+.Boards {
+  display: inline-block;
+  width: 100%;
+  background-color: white; }
+
+.Contact-Form {
+  display: inline-block;
+  background-color: white; }
