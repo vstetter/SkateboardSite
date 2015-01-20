@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+
+
+
+  .wrapper {
+    width: 80%;
+  }
+
+  .Buttons {
+    font-size: 0.5em;
+  }
+
+  .Content_Posts {
+    display: block;
+    .Post {
+      width: 100%;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+
+
+  .Content_Profiles {
+    display: block;
+    }
+    .ProfilePic {
+      height: 210px;
+      #Mountain, #Mullen, #Guerrero, #Caballero {
+        display: block;
+        width: 100%;
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        margin-top: 5px;
+      }
+    }
+
+
+  .ProfilePic #Guerrero {
+    height: 210px;
+    a h1 {
+      padding-top: 10%;
+    }
+  }
+
+
+
+
+  .Boards img {
+    width: 66%;
+  }
+
+
+  .Contact-Form {
+    display: block;
+    .ContactText, .Form {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------breakpoint--------*/
+/*
+@media screen and (max-width: 320px) {
+
+}
+*/

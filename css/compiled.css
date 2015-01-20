@@ -30,7 +30,7 @@ h3 {
   color: #AAAAAA; }
 
 p {
-  font-size: 0.375em;
+  font-size: 0.25em;
   line-height: 1.4em; }
 
 a {
@@ -53,8 +53,10 @@ img {
   float: right; }
   .Buttons li a {
     color: white;
+    opacity: 0.7;
     text-decoration: none;
-    padding: 1em; }
+    padding: 1em;
+    font-size: 0.75em; }
   .Buttons #Facebook a {
     background-color: #4c5894;
     width: 2em; }
@@ -85,17 +87,18 @@ img {
     padding: 0.5em 0; }
 
 .slider {
-  width: 100%;
+  width: 98%;
   display: block;
   border: 0.4em solid white;
   /*   background: white; */
   min-height: 300px;
   margin-top: 1em;
-  background: url("../images/grid.png") center center no-repeat, url("../images/top-image.png") 20% 30% no-repeat; }
+  background: url("../images/grid.png") center center no-repeat, url("../images/top-image.png") 20% 30% no-repeat;
+  background-size: 150%; }
   .slider img {
     float: left;
     padding: 1em;
-    width: 40%; }
+    width: 45%; }
 
 .Content_Posts {
   width: 100%;
@@ -110,8 +113,8 @@ img {
   text-align: left;
   background-color: white; }
   .Post h3, .Post .Subline, .Post p {
-    padding-left: 1em;
-    padding-right: 1em; }
+    padding-left: 5%;
+    padding-right: 5%; }
   .Post h3 {
     padding-top: 1em; }
   .Post .Subline {
@@ -119,18 +122,29 @@ img {
   .Post #ReadMore a {
     color: #9a2d31;
     display: block;
-    text-align: center; }
+    text-align: center;
+    font-size: 0.7em; }
 
 .Content_Profiles {
   width: 100%;
   display: inline-block;
   vertical-align: top;
-  margin-top: 1em; }
+  margin: 1em 0 0 0;
+  padding: 0; }
 
+/*
+.clearfix:before, clearifx:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+*/
 .ProfilePic {
-  margin: 1%;
-  padding: 0;
-  border: 1% solid white; }
+  margin: 0;
+  padding: 0; }
   .ProfilePic a {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
@@ -138,7 +152,8 @@ img {
     color: white; }
     .ProfilePic a h1 {
       text-align: center;
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding-top: 10%; }
   .ProfilePic #Mountain {
     background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-4.png");
     background-size: cover;
@@ -146,10 +161,12 @@ img {
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
-    width: 33%;
+    width: 32%;
     margin-left: 0%;
+    margin-right: 0.2em;
     height: 200px;
-    float: left; }
+    float: left;
+    border: 0.2em solid white; }
   .ProfilePic #Mullen {
     background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-3.png");
     background-size: cover;
@@ -157,21 +174,10 @@ img {
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
-    width: 33%;
+    width: 32%;
     height: 200px;
-    float: left; }
-  .ProfilePic #Caballero {
-    background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    text-align: center;
-    width: 66%;
-    margin-top: 1%;
-    margin-left: 0%;
-    height: 200px;
-    float: left; }
+    float: left;
+    border: 0.2em solid white; }
   .ProfilePic #Guerrero {
     background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-2.png");
     background-size: cover;
@@ -179,10 +185,28 @@ img {
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
+    background-position: 80% 50%;
     width: 32%;
     margin-right: 0%;
-    height: 400px;
-    float: right; }
+    height: 416px;
+    float: right;
+    border: 0.2em solid white; }
+    .ProfilePic #Guerrero a h1 {
+      padding-top: 40%; }
+  .ProfilePic #Caballero {
+    background: linear-gradient(rgba(91, 91, 89, 0.7), rgba(91, 91, 89, 0.7)), url("../images/sk8er-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    text-align: center;
+    background-position: 80%;
+    width: 65.5%;
+    margin-top: 1%;
+    margin-left: 0%;
+    height: 200px;
+    float: left;
+    border: 0.2em solid white; }
 
 .Boards {
   display: inline-block;
@@ -190,7 +214,7 @@ img {
   background-color: white;
   margin-top: 1em; }
   .Boards ul li {
-    padding: 0 0.5em; }
+    padding: 0 0.5%; }
 
 .Contact-Form {
   width: 100%;
@@ -240,3 +264,44 @@ img {
   width: 10em;
   padding: 0 2em;
   text-align: right; }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 80%; }
+  .Buttons {
+    font-size: 0.5em; }
+  .Content_Posts {
+    display: block; }
+    .Content_Posts .Post {
+      width: 100%;
+      display: block;
+      margin-top: 5px; }
+  .Content_Profiles {
+    display: block; }
+  .ProfilePic {
+    height: 210px; }
+    .ProfilePic #Mountain, .ProfilePic #Mullen, .ProfilePic #Guerrero, .ProfilePic #Caballero {
+      display: block;
+      width: 100%;
+      clear: both;
+      float: none;
+      margin: 0 auto;
+      margin-top: 5px; }
+  .ProfilePic #Guerrero {
+    height: 210px; }
+    .ProfilePic #Guerrero a h1 {
+      padding-top: 10%; }
+  .Boards img {
+    width: 66%; }
+  .Contact-Form {
+    display: block; }
+    .Contact-Form .ContactText, .Contact-Form .Form {
+      display: block;
+      width: 100%; } }
+
+/* ---------------breakpoint--------*/
+/*
+@media screen and (max-width: 320px) {
+
+}
+*/
