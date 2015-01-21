@@ -69,18 +69,22 @@ img {
   #Facebook a{
     background-color: $FacebookColor;
     width: 2em;
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
     }
   #RSS a{
     background-color: $RSSColor;
     width: 2em;
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
   }
   #Twitter a{
     background-color: $TwitterColor;
     width: 2em;
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
   }
   #Youtube a{
     background-color: $MainAccentColor;
     width: 2em;
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
   }
 
 }
@@ -90,7 +94,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 0.5em;
+  font-size: 0.7em;
   ul {
     width: 100%;
   }
@@ -102,6 +106,7 @@ img {
       color: white;
       background-color: $MainAccentColor;
       padding: 0.5em 0;
+      box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
       }
 }
 
@@ -114,6 +119,7 @@ img {
   margin-top: 1em;
   background: url("../images/grid.png") center center no-repeat, url("../images/top-image.png") 20% 30% no-repeat;
   background-size: 150%;
+  box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
 
   img {
     float: left;
@@ -135,6 +141,7 @@ img {
   display: inline-block;
   text-align: left;
   background-color: white;
+  box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
   h3,.Subline, p {
     padding-left: 5%;
     padding-right: 5%;
@@ -189,6 +196,7 @@ img {
   }
   #Mountain {
     @include linGradbackground (url("../images/sk8er-4.png"));
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
     width: 32%;
     margin-left: 0%;
     margin-right: 0.2em;
@@ -198,6 +206,7 @@ img {
   }
   #Mullen {
     @include linGradbackground (url("../images/sk8er-3.png"));
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
     width: 32%;
     height: 200px;
     float: left;
@@ -207,6 +216,7 @@ img {
   #Guerrero {
     @include linGradbackground (url("../images/sk8er-2.png"));
     background-position: 80% 50%;
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
     width: 32%;
     margin-right: 0%;
     height: 416px;
@@ -220,6 +230,7 @@ img {
   #Caballero {
     @include linGradbackground (url("../images/sk8er-1.png"));
     background-position: 80%;
+    box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
     width: 65.5%;
     margin-top: 1%;
     margin-left: 0%;
@@ -235,6 +246,7 @@ img {
   display: inline-block;
   width: 100%;
   background-color: white;
+  box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
   margin-top: 1em;
   ul li {
     padding: 0 0.5%;
@@ -247,8 +259,34 @@ img {
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
+  box-shadow: 0px 5px 0px 0px rgba(173,173,173,0.6);
   margin-top: 1em;
+  margin-bottom: 2em;
 }
+
+.Buttons_Contact {
+  @extend .Buttons;
+  float: none;
+  display: block;
+  text-align: left;
+  padding-left: 2em;
+  font-size: 0.3em;
+  #Facebook a{
+    background-color: #505050;
+  }
+  #RSS a{
+    background-color: #adadad;
+  }
+  #Twitter a{
+    background-color: #787878;
+
+  }
+  #Youtube a{
+    background-color: #747474;
+  }
+
+}
+
 .ContactText {
   width: 49%;
   display: inline-block;
@@ -258,7 +296,7 @@ img {
   }
   p {
     text-align: left;
-    padding: 0 1em 1em 1em;
+    padding: 0 1em 1em 2em;
     margin-top: 0;
   }
 }
@@ -293,6 +331,7 @@ img {
   width: 10em;
   padding: 0 2em;
   text-align: right;
+  margin-left: 21em;
   }
 
 
